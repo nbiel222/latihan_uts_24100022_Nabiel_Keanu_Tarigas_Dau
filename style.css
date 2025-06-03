@@ -1,0 +1,153 @@
+:root {
+    --pink_muda: #f8c8dc;
+    --pink_utama: #ff69b4;
+    --pink_tua: #d04894;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(var(--pink_utama), var(--pink_tua));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    animation: bounce 2s;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: white;
+    color: var(--pink_tua);
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--pink_muda);
+}
+
+.search-section {
+    text-align: center;
+}
+
+.search-section h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.search-form input {
+    font-size: 15px;
+    padding: 13px;
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+}
+
+select {
+    font-size: 15px;
+    padding: 13px;
+    border-radius: 7px;
+    border-color: rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+}
+
+button {
+    font-size: 15px;
+    padding: 13px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--pink_utama);
+    margin-right: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: var(--pink_muda);
+    color: #333;
+}
+
+.features {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.feature-box {
+    background-color: #fff0f5;
+    width: 270px;
+    padding: 30px;
+    margin-top: 100px;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fas {
+    font-size: 40px;
+    color: var(--pink_tua);
+}
+
+.features h3 {
+    padding: 15px;
+}
+
+.cta {
+    background-color: var(--pink_muda);
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--pink_utama);
+    color: white;
+    font-size: 20px;
+}
+
+
+@keyframes bounce {
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
